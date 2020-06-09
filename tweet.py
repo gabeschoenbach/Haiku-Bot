@@ -1,5 +1,7 @@
 import os
 
+# Not my code, and seems to not really work. 
+# delete_line(file, 0) deletes the first TWO lines of the file...(it seems)
 def delete_line(original_file, line_number):
     """ Delete a line from a file at the given line number """
     is_skipped = False
@@ -46,7 +48,7 @@ def prepare_tweet():
     lines += 1
     if lines == 3:
       break
-    delete_line("/Users/gabe/bash_stuff/haikuBot/haikus.txt", 0) 
+    delete_line("/Users/gabe/bash_stuff/haikuBot/haikus.txt", 0) # deletes 2 lines.. 
     delete_line("/Users/gabe/bash_stuff/haikuBot/haikus.txt", 0) 
   f.close()
   
